@@ -1,4 +1,4 @@
-[[Home]](../demo.html)
+[[Home]](../README.html)
 
 # Wordpress Demo
 
