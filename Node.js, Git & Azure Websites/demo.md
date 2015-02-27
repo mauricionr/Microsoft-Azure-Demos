@@ -1,3 +1,5 @@
+[[Home]](../demo.html)
+
 # Node.js, Git & Azure Websites
 
 [TOC]

@@ -1,4 +1,4 @@
-[[Home]](./demo.html)
+[[Home]](../demo.html)
 
 #Current & Preview Portal Overview
 
