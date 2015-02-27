@@ -38,9 +38,9 @@ Since we will be working with Websites in the rest of the demo, I like to showca
 ### Guide
 
 * *Speaker*: "Adding new services/infrastructure is easy"
-* Click on "+ NEW"
-* Click on "Virtual Machines"
+* Click on `+ NEW`
+* Click on `Virtual Machines`
 * *Speaker*: "you can quickly create a new server or select one from the gallery"
-* Click "From Gallery"
+* Click `From Gallery`
 * *Speaker*: "There are many images to chose from including Windows Server, popular Linux distros (distributions) like Ubuntu, CentOS & Suse even Puppet servers"
 * *Speaker*: "We are not going to be creating virtual machines in this demo, but this gives you an idea of some of the other things you can do with Azure"
