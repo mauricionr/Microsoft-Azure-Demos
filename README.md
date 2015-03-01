@@ -19,6 +19,7 @@ Clone this repo and open README.html to navigate the demos
 * Uploading a website via FTP
 * Git deploying a Node.js Express website to Azure Websites
 * Visual Studio & Azure Websites
+* Staging / Deployment Slots
 
 ### Demos
 
@@ -51,3 +52,6 @@ TBD
 #### Scaling Azure Websites
 
 [Markdown](Azure Websites Creation\scaling-websites-demo.md) - [HTML](Azure Websites Creation\scaling-websites-demo.html)
+
+#### Staging / Deployment Slots
+[Markdown](Azure Websites Deployment Slots\azure-websites-staging-demo.md) - [HTML](Azure Websites Deployment Slots\azure-websites-staging-demo.html)
