@@ -33,7 +33,7 @@
 
 ![Adding New Services](./assets/portal-overview-add-new-vm.gif)
 
-Since we will be working with Websites in the rest of the demo, I like to showcase how easy it is to add things like a Virtual Machine right from the portal. I don't completely add a new Virtual Machine but explain that it takes 6 minutes to create or so.
+Since we will be working with Websites in the rest of the demo, It's a good idea to show how easy it is to add other things like a Virtual Machine right from the portal, which in turn gives a brief overview of the mechanics of the portal. Don't worry about completely adding a new Virtual Machine however do follow the wizard to create one and explain that once finished their server will be available in 5-6 minutes.
 
 ### Guide
 

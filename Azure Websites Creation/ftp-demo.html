@@ -1014,50 +1014,46 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>portal-overview</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
-<h1 id="current-preview-portal-overview"><a name="user-content-current-preview-portal-overview" href="#current-preview-portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Current &amp; Preview Portal Overview</h1>
-<h2 id="notes"><a name="user-content-notes" href="#notes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Notes</h2>
-<ul>
-<li>Explain that there are two version of the portal<ul>
-<li>The current on which is available here: <a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a></li>
-<li>The preview portal aka &ldquo;New Portal&rdquo; which is available here: <a href="https://portal.azure.com/">https://portal.azure.com/</a></li>
-</ul>
-</li>
-<li>All demos (unless using preview features) will be based on the current portal</li>
-</ul>
-<h2 id="interface-overview"><a name="user-content-interface-overview" href="#interface-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Interface Overview</h2>
-<p><img alt="Portal Overview" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/portal-overview.png" /></p>
+</style><title>ftp-demo</title></head><body><article class="markdown-body"><h1 id="creating-a-website-with-ftp"><a name="user-content-creating-a-website-with-ftp" href="#creating-a-website-with-ftp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating a Website with FTP</h1>
+<p><img alt="Creating a Website with FTP" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/websites-ftp-deployment.gif" /></p>
+<h2 id="prepping-your-machine"><a name="user-content-prepping-your-machine" href="#prepping-your-machine" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Prepping your machine</h2>
+<h3 id="ftp-client"><a name="user-content-ftp-client" href="#ftp-client" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>FTP Client</h3>
+<p>You can use any FTP client for this demo. If you don&rsquo;t have one try <a href="https://filezilla-project.org/download.php?show_all=1">FileZilla</a>.</p>
+<h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
 <ol>
-<li>List of services available on Azure<ul>
-<li><strong>Speaker tips</strong>: Mention a few of them and explain that Azure includes 50+ services such as<ul>
-<li>Virtual Machines (Windows &amp; Linux)</li>
-<li>Websites</li>
-<li>Mobile Services (iOS, Android, Windows, Web, etc.)</li>
-<li>SQL, DocumentDB, Cache, Search etc.</li>
-<li>HDInsight</li>
-<li>Machine Learning</li>
-<li>Stream Analytics</li>
-<li>Virtual Networks</li>
-<li>Azure Active Directory</li>
-<li>Media Services</li>
-<li>CDN</li>
+<li>Click <code>+NEW</code> &gt; <code>WEBSITE</code> &gt; <code>QUICK CREATEr</code></li>
+<li>Enter required information<ul>
+<li>Unique website name</li>
+<li>Create a new hosting plan or use an existing one (you can simply use the default selection)</li>
+<li>Select your region (you can simply use the default selection)</li>
 </ul>
 </li>
+<li><em>Speaker</em>: &ldquo;Azure is now configuring a blank website for you&rdquo;</li>
+<li>Click on the website you just created</li>
+<li>Click <code>Set up deployment credentials</code><ul>
+<li>Enter a unique username &amp; password</li>
+<li>Click <code>OK</code> (checkmark)</li>
+<li><em>Speaker</em>: &ldquo;Your username must be unique&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;You can come back here anytime to come back and reset your deployment credentials&rdquo;</li>
 </ul>
 </li>
-<li>Quickest and easiest way to create new services/infrastructure on Azure</li>
-<li>List of your configured services on Azure</li>
-</ol>
-<h2 id="adding-new-services"><a name="user-content-adding-new-services" href="#adding-new-services" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Adding New Services</h2>
-<p><img alt="Adding New Services" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/portal-overview-add-new-vm.gif" /></p>
-<p>Since we will be working with Websites in the rest of the demo, It&rsquo;s a good idea to show how easy it is to add other things like a Virtual Machine right from the portal, which in turn gives a brief overview of the mechanics of the portal. Don&rsquo;t worry about completely adding a new Virtual Machine however do follow the wizard to create one and explain that once finished their server will be available in 5-6 minutes.</p>
-<h3 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h3>
-<ul>
-<li><em>Speaker</em>: &ldquo;Adding new services/infrastructure is easy&rdquo;</li>
-<li>Click on <code>+ NEW</code></li>
-<li>Click on <code>Virtual Machines</code></li>
-<li><em>Speaker</em>: &ldquo;you can quickly create a new server or select one from the gallery&rdquo;</li>
-<li>Click <code>From Gallery</code></li>
-<li><em>Speaker</em>: &ldquo;There are many images to chose from including Windows Server, popular Linux distros (distributions) like Ubuntu, CentOS &amp; Suse even Puppet servers&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;We are not going to be creating virtual machines in this demo, but this gives you an idea of some of the other things you can do with Azure&rdquo;</li>
-</ul></article></body></html>
+<li>Click <code>DASHBOARD</code></li>
+<li>Scroll down and zoom in to show the FTPS host name &amp; user<ul>
+<li><strong>Tip</strong>: You can use the built in Windows magnifier (<code>Windows Key</code> + &lsquo;+&rsquo; / <code>Windows Key</code> + &lsquo;-&lsquo;) or the very popular and handy <a href="https://technet.microsoft.com/en-us/sysinternals/bb897434">ZoomIt</a> which also allows for drawing arrows/boxes on the screen.</li>
+</ul>
+</li>
+<li>Launch your FTP Client (this demo uses FileZilla).</li>
+<li>Enter the FTP Host Name, Username &amp; Password and connect<ul>
+<li>If promoted to accept certificates do so</li>
+</ul>
+</li>
+<li>In your FTP client navigate the remote directory to <code>/site/wwwroot</code></li>
+<li>Delete the file &lsquo;hostingstart.html&rsquo;<ul>
+<li><em>Speaker</em>: &ldquo;Explain that Azure automatically creates your sites with this placeholder file.&rdquo;</li>
+</ul>
+</li>
+<li>In your FTP client navigate to the local directory that contains the website you wish to upload. This can be any site/app (.NET/PHP/Node.js/HTML etc.). If you don&rsquo;t have one you can use the site found in <code>./Azure Websites Deployment Slots\assets\coming-soon-demo-prod</code></li>
+<li>Drag &amp; Drop the local folder into the remote folder (upload the site)</li>
+<li>Once done uploading go back to the Azure Portal and click <code>Browse</code> on your site to show that it&rsquo;s been uploaded.</li>
+<li><em>Speaker</em>: &ldquo;FTP is a great way to get your site uploaded quickly however there are a number of better ways including using integrated source control for continuous deployment which we will also demo.&rdquo;</li>
+</ol></article></body></html>

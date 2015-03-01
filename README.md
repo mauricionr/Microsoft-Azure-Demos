@@ -1,6 +1,6 @@
 # Azure Demo Scripts
 
-This series of demos & scripts for Microsoft Azure 
+This repo contains a series of guides & scripts for demoing Microsoft Azure. 
 
 [TOC]
 
@@ -29,9 +29,9 @@ TBD
 
 [Markdown](Azure Websites Creation\wordpress-demo.md) - [HTML](Azure Websites Creation\wordpress-demo.html)
 
-##### New Portal Preview
+##### Uploading a website via FTP
 
-TBD
+[Markdown](Azure Websites Creation\ftp-demo.md) - [HTML](Azure Websites Creation\ftp-demo.html)
 
 ##### Node.js, Git & Azure Websites
 
