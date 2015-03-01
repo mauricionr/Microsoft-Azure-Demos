@@ -1014,67 +1014,51 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="azure-demo-scripts"><a name="user-content-azure-demo-scripts" href="#azure-demo-scripts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Demo Scripts</h1>
-<p>This repo contains a series of guides &amp; scripts for demoing Microsoft Azure. </p>
-<h2 id="usage"><a name="user-content-usage" href="#usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Usage</h2>
-<p>Clone this repo and open README.html to navigate the demos</p>
-<h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of contents</h2>
+</style><title>azure-websites-backups-demo</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
+<h1 id="azure-websites-backups"><a name="user-content-azure-websites-backups" href="#azure-websites-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites Backups</h1>
 <div class="toc">
 <ul>
-<li><a href="#azure-demo-scripts">Azure Demo Scripts</a><ul>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#table-of-contents">Table of contents</a></li>
-<li><a href="#azure-websites">Azure Websites</a><ul>
-<li><a href="#topics-covered-are">Topics covered are</a></li>
-<li><a href="#demos">Demos</a><ul>
-<li><a href="#portal-overview">Portal Overview</a><ul>
-<li><a href="#current-portal-overview">Current Portal Overview</a></li>
-<li><a href="#new-portal-preview">New Portal Preview</a></li>
-</ul>
-</li>
-<li><a href="#creating-a-wordpress-website">Creating a Wordpress Website</a></li>
-<li><a href="#uploading-a-website-via-ftp">Uploading a website via FTP</a></li>
-<li><a href="#nodejs-git-azure-websites">Node.js, Git &amp; Azure Websites</a></li>
-<li><a href="#visual-studio-azure-websites">Visual Studio &amp; Azure Websites</a></li>
-<li><a href="#scaling-azure-websites">Scaling Azure Websites</a></li>
-<li><a href="#staging-deployment-slots">Staging / Deployment Slots</a></li>
-<li><a href="#automatic-backups">Automatic Backups</a></li>
-</ul>
-</li>
+<li><a href="#azure-websites-backups">Azure Websites Backups</a><ul>
+<li><a href="#guide">Guide</a><ul>
+<li><a href="#create-a-storage-account">Create a storage account</a></li>
+<li><a href="#create-a-website-enable-backups">Create a website &amp; enable backups</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="azure-websites"><a name="user-content-azure-websites" href="#azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites</h2>
-<h3 id="topics-covered-are"><a name="user-content-topics-covered-are" href="#topics-covered-are" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Topics covered are</h3>
-<ul>
-<li>Current &amp; Preview Portal Overview</li>
-<li>Creating a Wordpress site via the Gallery</li>
-<li>Uploading a website via FTP</li>
-<li>Git deploying a Node.js Express website to Azure Websites</li>
-<li>Visual Studio &amp; Azure Websites</li>
-<li>Staging / Deployment Slots</li>
-<li>Backups</li>
+<p>This is less a &ldquo;demo&rdquo; then a portal overview of how to configure backups for your website.</p>
+<p><img alt="Azure Websites Backups" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Backups/assets/azure-websites-backups.gif" /></p>
+<h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
+<h3 id="create-a-storage-account"><a name="user-content-create-a-storage-account" href="#create-a-storage-account" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create a storage account</h3>
+<p>This part is technically optional if you have already created a storage account. However you should still explain the concept of a storage account to the audience.</p>
+<ol>
+<li><em>Speaker:</em> &ldquo;Backup your Windows Azure Website to a Storage Account on demand, or on a schedule you define. Use this backup to create an offline copy of this website or restore it to a previous version. To get started we will need to create a storage account.&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;Azure Storage is massively scalable, so you can store and process hundreds of terabytes of data to support the big data scenarios required by scientific, financial analysis, and media applications. Or you can store the small amounts of data required for a small business website. Wherever your needs fall, you pay only for the data you&rsquo;re storing. Azure Storage currently stores tens of trillions of unique customer objects, and handles millions of requests per second on average. You can select your level of redundancy, the lowest being triple redundant, so you know your data is protected!&rdquo;</li>
+<li>Click <code>+ NEW</code> &gt; <code>DATA SERVICES</code> &gt; <code>STORAGE</code> &gt; <code>QUICK CREATE</code></li>
+<li>Enter required information<ul>
+<li><code>URL</code>: Enter a globally unique name for your account</li>
+<li><code>LOCATION/AFFINITY GROUP</code>: Select one or use the default</li>
+<li><code>REPLICATION</code>: Use default</li>
 </ul>
-<h3 id="demos"><a name="user-content-demos" href="#demos" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Demos</h3>
-<h4 id="portal-overview"><a name="user-content-portal-overview" href="#portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Portal Overview</h4>
-<h5 id="current-portal-overview"><a name="user-content-current-portal-overview" href="#current-portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Current Portal Overview</h5>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/portal-overview.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/portal-overview.html">HTML</a></p>
-<h5 id="new-portal-preview"><a name="user-content-new-portal-preview" href="#new-portal-preview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>New Portal Preview</h5>
-<p>TBD</p>
-<h4 id="creating-a-wordpress-website"><a name="user-content-creating-a-wordpress-website" href="#creating-a-wordpress-website" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating a Wordpress Website</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/wordpress-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/wordpress-demo.html">HTML</a></p>
-<h4 id="uploading-a-website-via-ftp"><a name="user-content-uploading-a-website-via-ftp" href="#uploading-a-website-via-ftp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Uploading a website via FTP</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.html">HTML</a></p>
-<h4 id="nodejs-git-azure-websites"><a name="user-content-nodejs-git-azure-websites" href="#nodejs-git-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Node.js, Git &amp; Azure Websites</h4>
-<p><a href="Node.js, Git &amp; Azure Websites\demo.md">Markdown</a> - <a href="Node.js, Git &amp; Azure Websites\demo.html">HTML</a></p>
-<h4 id="visual-studio-azure-websites"><a name="user-content-visual-studio-azure-websites" href="#visual-studio-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Visual Studio &amp; Azure Websites</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/visual-studio-websites-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/visual-studio-websites-demo.html">HTML</a></p>
-<h4 id="scaling-azure-websites"><a name="user-content-scaling-azure-websites" href="#scaling-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scaling Azure Websites</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/scaling-websites-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/scaling-websites-demo.html">HTML</a></p>
-<h4 id="staging-deployment-slots"><a name="user-content-staging-deployment-slots" href="#staging-deployment-slots" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Staging / Deployment Slots</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Deployment%20Slots/azure-websites-staging-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Deployment%20Slots/azure-websites-staging-demo.html">HTML</a></p>
-<h4 id="automatic-backups"><a name="user-content-automatic-backups" href="#automatic-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Automatic Backups</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Backups/azure-websites-backups-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Backups/azure-websites-backups-demo.html">HTML</a></p></article></body></html>
+</li>
+<li>Click <code>CREATE STORAGE ACCOUNT</code></li>
+</ol>
+<h3 id="create-a-website-enable-backups"><a name="user-content-create-a-website-enable-backups" href="#create-a-website-enable-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create a website &amp; enable backups</h3>
+<ol>
+<li>Click <code>+ NEW</code> &gt; <code>COMPUTE</code> &gt; <code>WEBSITE</code> &gt; <code>Quick Create</code></li>
+<li><em>Speaker</em>: &ldquo;We will create a new test site in our hosting plan that is setup for Standard tier. Only the Standard tier supports automatic backups&rdquo;</li>
+<li>Enter required information<ul>
+<li><code>URL</code>: a unique name for this demo site</li>
+<li><code>WEB HOSTING PLAN</code>: You will need to deploy to a <strong>Standard</strong> tier plan as only the standard tier supports automatic backups.</li>
+</ul>
+</li>
+<li>Click on the <code>BACKUPS</code> tab</li>
+<li>Click <code>ON</code> to enable backups</li>
+<li>Select your newly created storage account (or any previously created storage account)</li>
+<li><em>Speaker</em>: &ldquo;Currently storage account only support daily backups.&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;If your website is linked to a database via the configurations connection string you can optionally enable database backups as well. If you are using Azure SQL Azure SQL Database it by default (and for free) includes full database backup once a week, differential database backups once a day, and transaction log backups every 5 minutes.&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;You can perform a backup any time you want simply by clicking on BACKUP NOW.&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;To restore a backup click RESTORE NOW and select the backup to restore from.&rdquo;</li>
+</ol></article></body></html>

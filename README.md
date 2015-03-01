@@ -20,6 +20,7 @@ Clone this repo and open README.html to navigate the demos
 * Git deploying a Node.js Express website to Azure Websites
 * Visual Studio & Azure Websites
 * Staging / Deployment Slots
+* Backups
 
 ### Demos
 
@@ -55,3 +56,6 @@ TBD
 
 #### Staging / Deployment Slots
 [Markdown](Azure Websites Deployment Slots\azure-websites-staging-demo.md) - [HTML](Azure Websites Deployment Slots\azure-websites-staging-demo.html)
+
+#### Automatic Backups
+[Markdown](Azure Websites Backups\azure-websites-backups-demo.md) - [HTML](Azure Websites Backups\azure-websites-backups-demo.html)
