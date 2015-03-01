@@ -2,6 +2,12 @@
 
 This repo contains a series of guides & scripts for demoing Microsoft Azure. 
 
+## Usage
+
+Clone this repo and open README.html to navigate the demos
+
+## Table of contents
+
 [TOC]
 
 ## Azure Websites
@@ -26,18 +32,18 @@ This repo contains a series of guides & scripts for demoing Microsoft Azure.
 
 TBD
 
-##### Creating a Wordpress Website
+#### Creating a Wordpress Website
 
 [Markdown](Azure Websites Creation\wordpress-demo.md) - [HTML](Azure Websites Creation\wordpress-demo.html)
 
-##### Uploading a website via FTP
+#### Uploading a website via FTP
 
 [Markdown](Azure Websites Creation\ftp-demo.md) - [HTML](Azure Websites Creation\ftp-demo.html)
 
-##### Node.js, Git & Azure Websites
+#### Node.js, Git & Azure Websites
 
 [Markdown](Node.js, Git & Azure Websites\demo.md) - [HTML](Node.js, Git & Azure Websites\demo.html)
 
-##### Visual Studio & Azure Websites
+#### Visual Studio & Azure Websites
 
 [Markdown](Azure Websites Creation\visual-studio-websites-demo.md) - [HTML](Azure Websites Creation\visual-studio-websites-demo.html)
