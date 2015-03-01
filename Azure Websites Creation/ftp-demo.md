@@ -11,6 +11,7 @@
 You can use any FTP client for this demo. If you don't have one try [FileZilla](https://filezilla-project.org/download.php?show_all=1).
 
 ## Guide
+
 1. Click `+NEW` > `WEBSITE` > `QUICK CREATEr`
 1. Enter required information
 	* Unique website name
