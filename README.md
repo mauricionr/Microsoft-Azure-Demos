@@ -47,3 +47,7 @@ TBD
 #### Visual Studio & Azure Websites
 
 [Markdown](Azure Websites Creation\visual-studio-websites-demo.md) - [HTML](Azure Websites Creation\visual-studio-websites-demo.html)
+
+#### Scaling Azure Websites
+
+[Markdown](Azure Websites Creation\scaling-websites-demo.md) - [HTML](Azure Websites Creation\scaling-websites-demo.html)

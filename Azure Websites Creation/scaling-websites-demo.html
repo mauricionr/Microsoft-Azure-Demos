@@ -1014,59 +1014,73 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="azure-demo-scripts"><a name="user-content-azure-demo-scripts" href="#azure-demo-scripts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Demo Scripts</h1>
-<p>This repo contains a series of guides &amp; scripts for demoing Microsoft Azure. </p>
-<h2 id="usage"><a name="user-content-usage" href="#usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Usage</h2>
-<p>Clone this repo and open README.html to navigate the demos</p>
-<h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of contents</h2>
+</style><title>scaling-websites-demo</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
+<h1 id="scaling-azure-websites"><a name="user-content-scaling-azure-websites" href="#scaling-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scaling Azure Websites</h1>
 <div class="toc">
 <ul>
-<li><a href="#azure-demo-scripts">Azure Demo Scripts</a><ul>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#table-of-contents">Table of contents</a></li>
-<li><a href="#azure-websites">Azure Websites</a><ul>
-<li><a href="#topics-covered-are">Topics covered are</a></li>
-<li><a href="#demos">Demos</a><ul>
-<li><a href="#portal-overview">Portal Overview</a><ul>
-<li><a href="#current-portal-overview">Current Portal Overview</a></li>
-<li><a href="#new-portal-preview">New Portal Preview</a></li>
-</ul>
-</li>
-<li><a href="#creating-a-wordpress-website">Creating a Wordpress Website</a></li>
-<li><a href="#uploading-a-website-via-ftp">Uploading a website via FTP</a></li>
-<li><a href="#nodejs-git-azure-websites">Node.js, Git &amp; Azure Websites</a></li>
-<li><a href="#visual-studio-azure-websites">Visual Studio &amp; Azure Websites</a></li>
-<li><a href="#scaling-azure-websites">Scaling Azure Websites</a></li>
-</ul>
-</li>
+<li><a href="#scaling-azure-websites">Scaling Azure Websites</a><ul>
+<li><a href="#guide">Guide</a><ul>
+<li><a href="#manual-scale">Manual Scale</a></li>
+<li><a href="#scheduled-scale">Scheduled Scale</a></li>
+<li><a href="#autoscale">Autoscale</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="azure-websites"><a name="user-content-azure-websites" href="#azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites</h2>
-<h3 id="topics-covered-are"><a name="user-content-topics-covered-are" href="#topics-covered-are" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Topics covered are</h3>
-<ul>
-<li>Current &amp; Preview Portal Overview</li>
-<li>Creating a Wordpress site via the Gallery</li>
-<li>Uploading a website via FTP</li>
-<li>Git deploying a Node.js Express website to Azure Websites</li>
-<li>Visual Studio &amp; Azure Websites</li>
+<p>This is less a &ldquo;demo&rdquo; then a portal overview of how to configure the three scaling scenarios which are &ldquo;Manual&rdquo;, &ldquo;Scheduled&rdquo; or &ldquo;Auto&rdquo;.</p>
+<p><img alt="Scaling Azure Websites" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/websites-scale.gif" /></p>
+<h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
+<ol>
+<li>Open the Azure Portal to your list of Websites</li>
+<li>Open a Website</li>
+<li>Click on the <code>Scale</code> tab</li>
+<li>Explain the difference between the Free, Shared, Basic &amp; Standard Web Hosting Plans<ul>
+<li>Web Hosting Plans can be shared across multiple websites. Each plan has a mode associated with it. Different modes expose different sets of features and capabilities. Plans in the Free and Shared modes run on a shared infrastructure with sites managed by other customers. These sites will have strict quotas for resource utilization. Plans in the Basic and Standard modes run on resources that are dedicated to your sites and have fewer restrictions.<ul>
+<li>The free tier is limited to 10 sites, runs on a shared server with no dedicated cpu or memory, storage is limited to 1 GB, outgoing (egress) bandwidth is limited to 165 MB per day (incoming or ingress bandwidth is free). </li>
+<li>The shared tier runs on a shared server (up to 6 of them) with dedicated cpu &amp; memory, support custom domains and can be scaled out to up to 6 instances.</li>
+<li>The basic tier websites run on VMs dedicated exclusively to a single customer&rsquo;s websites and includes support for SSL (at an extra cost), scaling out to up to 6 instances, and file storage of up to 20 GB of content.</li>
+<li>The standard tier websites runs on VMs dedicated exclusively to a single customer&rsquo;s websites and includes support for SSL, scaling out to up to 10 instances, and file storage of up to 50 GB of content.</li>
+<li>Features like websockets (and the number of them), traffic management, max vm instances, ssl support etc. all depend on the tier. As these are always changing it&rsquo;s best to refer them to <a href="http://azure.microsoft.com/en-us/pricing/details/websites">http://azure.microsoft.com/en-us/pricing/details/websites</a></li>
+<li>For questions on pricing or a feature matrix chart see <a href="http://azure.microsoft.com/en-us/pricing/details/websites/">Websites Pricing</a></li>
 </ul>
-<h3 id="demos"><a name="user-content-demos" href="#demos" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Demos</h3>
-<h4 id="portal-overview"><a name="user-content-portal-overview" href="#portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Portal Overview</h4>
-<h5 id="current-portal-overview"><a name="user-content-current-portal-overview" href="#current-portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Current Portal Overview</h5>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/portal-overview.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/portal-overview.html">HTML</a></p>
-<h5 id="new-portal-preview"><a name="user-content-new-portal-preview" href="#new-portal-preview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>New Portal Preview</h5>
-<p>TBD</p>
-<h4 id="creating-a-wordpress-website"><a name="user-content-creating-a-wordpress-website" href="#creating-a-wordpress-website" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating a Wordpress Website</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/wordpress-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/wordpress-demo.html">HTML</a></p>
-<h4 id="uploading-a-website-via-ftp"><a name="user-content-uploading-a-website-via-ftp" href="#uploading-a-website-via-ftp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Uploading a website via FTP</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.html">HTML</a></p>
-<h4 id="nodejs-git-azure-websites"><a name="user-content-nodejs-git-azure-websites" href="#nodejs-git-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Node.js, Git &amp; Azure Websites</h4>
-<p><a href="Node.js, Git &amp; Azure Websites\demo.md">Markdown</a> - <a href="Node.js, Git &amp; Azure Websites\demo.html">HTML</a></p>
-<h4 id="visual-studio-azure-websites"><a name="user-content-visual-studio-azure-websites" href="#visual-studio-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Visual Studio &amp; Azure Websites</h4>
-<p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/visual-studio-websites-demo.md">Markdown</a> - <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/visual-studio-websites-demo.html">HTML</a></p>
-<h4 id="scaling-azure-websites"><a name="user-content-scaling-azure-websites" href="#scaling-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scaling Azure Websites</h4>
-<p><a href="Azure Websites Creation\scaling-websites-demo.md">Markdown</a> - <a href="Azure Websites Creation\scaling-websites-demo.html">HTML</a></p></article></body></html>
+</li>
+</ul>
+</li>
+<li>If the site you have selected isn&rsquo;t already in the &lsquo;Standard&rsquo; tier, change to that now (but you do not need to save it yet)</li>
+<li>Scroll down to <code>INSTANCE SIZE</code></li>
+<li><em>Speaker</em>: &ldquo;Generally speaking there are two ways to scale, Up or Out. Scaling up refers to increasing the size of the system, so resources like more CPU and more RAM. Scaling Out generally referrals to adding more systems and balancing the load between them. Azure allows you to easily do both manually, by a schedule or automatically.&rdquo;</li>
+</ol>
+<h3 id="manual-scale"><a name="user-content-manual-scale" href="#manual-scale" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Manual Scale</h3>
+<ol>
+<li>Show how to manually <em>scale up</em> by opening the <code>Instance Size</code> dropdown and showing the options</li>
+<li>Show how to manually <em>scale out</em> by scrolling down to <code>INSTANCE COUNT</code> and sliding the bar to the right to increase the instance count.<br />
+<em>Speaker</em>: &ldquo;When you scale out (provision multiple instances) Azure Websites some pretty impressive magic happens. Azure not only configures the new servers for you, but also configures a load balancer to round-robin the requests across your instances, all for free! Also the backend service of Azure called Kudu monitors for updates to your site, like when you deploy new code and will automatically deploy it across all your sites.&rdquo;</li>
+</ol>
+<h3 id="scheduled-scale"><a name="user-content-scheduled-scale" href="#scheduled-scale" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scheduled Scale</h3>
+<ol>
+<li>Scroll back up to <code>EDIT SCALE SETTINGS FOR SCHEDULE</code><ul>
+<li>Explain that Azure Websites allows you to define a schedule for your scaling needs.</li>
+</ul>
+</li>
+<li>Click <code>set up schedule times</code><ul>
+<li>Explain that you can define times of the day or even specific days and edit the scale settings for that time period.</li>
+<li><em>Speaker</em>: &ldquo;Take the example of a development environment or a reporting service. Both are likely used most during core business hours, but less so late at night. You can configure a scale settings for the day and another for the evening to save on costs.&rdquo;</li>
+</ul>
+</li>
+</ol>
+<h3 id="autoscale"><a name="user-content-autoscale" href="#autoscale" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Autoscale</h3>
+<ol>
+<li>Scroll to <code>SCALE BY METRIC</code> option</li>
+<li>Click <code>CPU</code><ul>
+<li>Explain that currently Azure only supports autoscaling based on CPU</li>
+</ul>
+</li>
+<li>Scroll down to <code>INSTANCE COUNT</code></li>
+<li>Set instance count min to 2 and max to anything more than 2<ul>
+<li>Explain that you can set the minimum and maximum number of instances you wish Azure to configure for you based on the CPU load of your application.</li>
+<li>When Scale by Metric is enabled, Microsoft Azure checks the CPU of your website once every five minutes and adds instances as needed at that point in time. If CPU usage is low, Microsoft Azure will remove instances once every two hours to ensure that your website remains performant. Generally, putting the minimum instance count at 1 is appropriate. However, if you have sudden usage spikes on your website, be sure that you have a sufficient minimum number of instances to handle the load. For example, if you have a sudden spike of traffic during the 5 minute interval before Microsoft Azure checks your CPU usage, your site might not be responsive during that time. If you expect sudden, large amounts of traffic, set the minimum instance count higher to anticipate these bursts. <a href="">more info</a></li>
+</ul>
+</li>
+</ol></article></body></html>
