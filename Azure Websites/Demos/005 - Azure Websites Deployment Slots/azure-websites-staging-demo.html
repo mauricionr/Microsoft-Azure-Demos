@@ -1014,58 +1014,66 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>wordpress-demo</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
-<h1 id="wordpress-demo"><a name="user-content-wordpress-demo" href="#wordpress-demo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Wordpress Demo</h1>
-<p><img alt="Create a Wordpress Site" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/websites-wordpress-create.gif" /></p>
+</style><title>azure-websites-staging-demo</title></head><body><article class="markdown-body"><p><a href="../../README.html">[Home]</a></p>
+<h1 id="azure-websites-staging"><a name="user-content-azure-websites-staging" href="#azure-websites-staging" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites Staging</h1>
+<div class="toc">
+<ul>
+<li><a href="#azure-websites-staging">Azure Websites Staging</a><ul>
+<li><a href="#guide">Guide</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This demo goes over the concept of staging / deployment slots and how to swap between them.</p>
+<p><img alt="Azure Websites Staging" src="assets/azure-websites-staging.gif" /></p>
 <h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
+<p>There are two ways to demo this. You can go through all the steps live (creating the site, defining the deployment slots, deploying to each one, swapping between the two) OR have everything pre-configured and simply explain the concept and show how easy it is to swap between the two.</p>
 <ol>
-<li>Click <code>NEW</code></li>
-<li>Click <code>WEBSITE</code></li>
-<li>Click <code>FROM GALLERY</code></li>
-<li>Scroll through the list of frameworks, blogs &amp; other gallery items<ul>
-<li><em>Speaker</em>: &ldquo;The gallery contains a number of popular web applications and frameworks and makes it easy to deploy with with just a few clicks. This includes blogs such as Orchard CMD, Umbraco &amp; of course Wordpress, but also CMSs like Drupal &amp; Acquia, ecommerce platforms, forums, image galleries and more.&rdquo;</li>
+<li>Click <code>+ NEW</code> &gt; <code>COMPUTE</code> &gt; <code>WEBSITE</code> &gt; <code>QUICK CREATE</code></li>
+<li>Enter a unique name for your site and click <code>CREATE WEBSITE</code></li>
+<li>If you haven&rsquo;t created this site on a Basic/Standard hosting plan you will need to upgrade it<ol>
+<li>Click on <code>SCALE</code></li>
+<li>Select <code>Basic</code> or <code>Standard</code></li>
+<li>Click <code>SAVE</code> then <code>YES</code> to the popup<ul>
+<li>*<em>NOTE</em>: This can take a few minutes (6+), so it&rsquo;s a good idea to have a web hosting plan configured for standard or basic already and create your demo site in t.</li>
 </ul>
 </li>
-<li>Click <code>BLOGS</code> then <code>Wordpress</code><ul>
-<li><em>Speaker</em>: &ldquo;The Azure team will automatically deploy and configure the latest Wordpress release&rdquo;</li>
-</ul>
-</li>
-<li>Configure Wordpress - Step 1<ul>
-<li><code>URL</code>: enter a unique name</li>
-<li><code>DATABASE</code>: If you haven&rsquo;t yet created a MySQL database select &ldquo;Create a new MySQL database&rdquo; otherwise select &ldquo;Use Existing MySQL database&rdquo;<br />
-WEBSCALEGROUP:<ul>
-<li>Chose the default option, however explain what a web scale group is.</li>
-<li><em>Speaker</em>: &ldquo;Azure allows you to groups sites together. So certain sites could all be allocated to a certain size server, where as others can be assigned to a different cluster with a different scale.&rdquo;</li>
-</ul>
-</li>
-<li>Deployment Settings:<ul>
-<li><em>Speaker</em>: &ldquo;Wordpress can be made more secure by providing 4 authentication keys and 4 hashing salts. What are these? it&rsquo;s random bits of data that when combined add an extra layer of security to your passwords and data stores in cookies. Wordpress has a random key generator you can use found at aka.ms/wordpresskeys or by searching for &lsquo;wordpress key generator&rsquo;&ldquo;</li>
-<li>Show them the key generator at <a href="http://aka.ms/wordpresskeys">http://aka.ms/wordpresskeys</a> but don&rsquo;t bother entering them into the Azure wizard</li>
-</ul>
-</li>
-<li>Click <code>Next</code> (Right arrow)</li>
-</ul>
-</li>
-<li>Configure Wordpress - Step 2<ul>
-<li>Depending of your selection for creating a new MySQL database or reusing an existing one this screen will be slightly different. Either way there is nothing for you to do other than to accept the ClearDB&rsquo;s legal terms at the bottom.</li>
-<li><em>Speaker</em>: &ldquo;Azure will automatically create your website to host Wordpress as well as create &amp; manage a MySQL database which is required by Wordpress. This &ldquo;MySQL as a Service&rdquo; is hosted on Azure but managed by ClearDB as they are better equipped at managing MySQL then Microsoft, which is why you have to agree to their terms and conditions. You can if you wish create a MySQL server using Virtual Machines and connect that to your website but that scenario won&rsquo;t be covered by this demo.&rdquo;&ldquo;</li>
-<li>Click <code>OK</code> (Checkmark)</li>
-</ul>
-</li>
-<li><em>Speaker</em>: &ldquo;Azure is now either creating your web server or connecting to one it has already created for you, setting up IIS with PHP, installing the latest version of Wordpress, creating a database for you, setting it up. In short it&rsquo;s auto-magically setting up everything for you so you don&rsquo;t have to worry about servers, databases, connection strings, configuring PHP etc. This will take about 30 seconds to a minute.&rdquo;</li>
-<li>Once the site has been created click on it and then click <code>Browse</code> to show that it&rsquo;s now ready to be configured with their language &amp; administrative account etc.</li>
 </ol>
-<p><strong> Optional </strong><br />
-If you have time you can also show deleting a Wordpress site and explain the concept of linked resources.</p>
-<p><img alt="Deleting a websites &amp; managing linked resources" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/websites-wordpress-linked-resources.gif" /></p>
-<ol>
-<li>In the Dashboard for your new Wordpress site in Azure click <code>DELETE</code></li>
-<li>In the &ldquo;MySQL&rdquo; Database Warning&rdquo; popup. [x] select the associated database<ul>
-<li><em>Speaker</em>: &ldquo;When Azure creates and manages services like this for you it automatically links resources so you can manage them together. In this case it&rsquo;s prompting you to delete the linked database.&rdquo;</li>
+</li>
+<li>Click on <code>Add a new deployment slot</code> if you are in the Quick Start screen or the Dashboard</li>
+<li>Enter required information<ul>
+<li><code>NAME</code>: &ldquo;preprod&rdquo;</li>
+<li><code>CONFIGURATION SOURCE</code>: Select the name of your website</li>
 </ul>
 </li>
-<li>Close the prompt (Do NOT delete the site)</li>
-<li>Click the <code>LINKED RESOURCES</code> tab to show the currently configured linked resources</li>
-<li>Click <code>LINK</code> </li>
-<li><em>Speaker</em>: &ldquo;Here you can either add new or link to existing resources such as SQL Databases &amp; Storage Accounts. This is helpful to keep resources together for management purposes. Imagine having 10&rsquo;s or even 100&rsquo;s of websites and not knowing which database or storage account belongs to which.&rdquo;</li>
+<li>Expand (by clicking the right arrow) your website to show there is now 2 sites</li>
+<li>Click on your main website</li>
+<li>Click on <code>DASHBOARD</code> (so you can see the FTP credentials)</li>
+<li>FTP upload the site found in <code>assets\coming-soon-demo-prod</code>. <a href="../Azure Websites Creation/ftp-demo.html">Click here</a> to learn how to FTP deploy a site in Azure.</li>
+<li>
+<p>Click <code>BROWSE</code> on the site to show what it looks like</p>
+<ul>
+<li><em>Speaker</em>: &ldquo;This is our current production site, it&rsquo;s not that great but the good news is the developers are hard at work on the next version. Note that the URL for this site is <your site name>.azurewebsites.net&rdquo;</li>
+<li><strong>Tip</strong>: Do not close this tab when you are done, you will need it later!</li>
+</ul>
+</li>
+<li>
+<p>Navigate back to your list of websites and click the <code>preprod</code> version of the site</p>
+</li>
+<li>Click on the <code>preprod</code> version of your website</li>
+<li>Click on <code>DASHBOARD</code> (so you can see the FTP credentials)</li>
+<li>FTP upload the site found in <code>assets\coming-soon-demo-preprod</code>. <a href="../Azure Websites Creation/ftp-demo.html">Click here</a> to learn how to FTP deploy a site in Azure.<ul>
+<li><strong>Tip:</strong> Be sure to use the proper deployment username for your <code>preprod</code> site, it is different than the one for your main site. If you don not change this you will just log into your main site.</li>
+</ul>
+</li>
+<li>Click <code>BROWSE</code> on the site to show what it looks like &amp; compare it to the current one in production<ul>
+<li><em>Speaker</em>: &ldquo;This is the newest version of the site, I think it&rsquo;s much nicer. It&rsquo;s passed all tests and we are ready to swap it so it is the live site! Note the URL of this site is <your site name>-<deployment slot>.azurewebsites.net&rdquo;</li>
+<li><strong>Tip</strong>: Do not close this tab when you are done, you will need it later!</li>
+</ul>
+</li>
+<li>Click <code>SWAP</code><br />
+        * <em>Speaker</em>: &ldquo;You can have multiple deployment slots for say dev, test, pre-production, beta &amp; finally production. Select the source and the destination and simply click the checkmark&rdquo;</li>
+<li>Click <code>OK</code> (checkmark)</li>
+<li>Go back to your production site browser tab and refresh the page to show that the site has changed<br />
+        * <em>Speaker</em>: &ldquo;When you swap deployment slots Azure does what is called a VIP swap or Virtual IP swap, it simply changes (interally) where your slots point to so it&rsquo;s very fast. You can see the production site now has the latest code and if we refresh the preprod one it will have the old code ready to be updated to the current and future versions of your site/app.&rdquo;</li>
 </ol></article></body></html>

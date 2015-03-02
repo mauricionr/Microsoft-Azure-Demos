@@ -1014,23 +1014,151 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>README</title></head><body><article class="markdown-body"><p><a href="../../README.html">[Home]</a></p>
-<h1 id="microsoft-azure-demo-scripts"><a name="user-content-microsoft-azure-demo-scripts" href="#microsoft-azure-demo-scripts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Microsoft Azure Demo Scripts</h1>
-<p>This repo contains a series of guides &amp; scripts for demoing Microsoft Azure. </p>
-<h2 id="usage"><a name="user-content-usage" href="#usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Usage</h2>
-<p>Clone this repo and open README.html to navigate the demos</p>
-<pre><code>    git clone https://github.com/m-gagne/Microsoft-Azure-Demos.git .
-</code></pre>
-<h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of contents</h2>
+</style><title>visual-studio-websites-demo</title></head><body><article class="markdown-body"><p><a href="../../README.html">[Home]</a></p>
+<h1 id="visual-studio-azure-websites"><a name="user-content-visual-studio-azure-websites" href="#visual-studio-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Visual Studio &amp; Azure Websites</h1>
 <div class="toc">
 <ul>
-<li><a href="#microsoft-azure-demo-scripts">Microsoft Azure Demo Scripts</a><ul>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#table-of-contents">Table of contents</a></li>
-<li><a href="#azure-websites">Azure Websites</a></li>
+<li><a href="#visual-studio-azure-websites">Visual Studio &amp; Azure Websites</a><ul>
+<li><a href="#prepping-your-machine">Prepping your machine</a><ul>
+<li><a href="#net-demo-install-visual-studio">.NET Demo: Install Visual Studio</a></li>
+<li><a href="#nodejs-demo-install-visual-studio-2013-the-nodejs-tools-for-vs">Node.js Demo: Install Visual Studio 2013 &amp; the Node.js Tools for VS</a><ul>
+<li><a href="#install-visual-studio-2013">Install Visual Studio 2013</a></li>
+<li><a href="#install-nodejs-for-windows">Install Node.js for Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#guides">Guides</a><ul>
+<li><a href="#create-deploy-net-app">Create &amp; Deploy .NET app</a></li>
+<li><a href="#create-deploy-nodejs-app">Create &amp; Deploy Node.js app</a></li>
+<li><a href="#visual-studio-server-explorer">Visual Studio &amp; Server Explorer</a><ul>
+<li><a href="#guide">Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="azure-websites"><a name="user-content-azure-websites" href="#azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites</h2>
-<p><a href="Azure%20Websites/README.html">HTML</a> - <a href="Azure%20Websites/README.md">Markdown</a></p></article></body></html>
+<h2 id="prepping-your-machine"><a name="user-content-prepping-your-machine" href="#prepping-your-machine" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Prepping your machine</h2>
+<h3 id="net-demo-install-visual-studio"><a name="user-content-net-demo-install-visual-studio" href="#net-demo-install-visual-studio" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>.NET Demo: Install Visual Studio</h3>
+<ul>
+<li>Install Visual Studio 2013 or 2015</li>
+<li>If you have MSDN <a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/">download from MSDN here</a></li>
+<li>If you do not have MSDN <a href="http://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx">download the free Community Edition</a></li>
+</ul>
+<h3 id="nodejs-demo-install-visual-studio-2013-the-nodejs-tools-for-vs"><a name="user-content-nodejs-demo-install-visual-studio-2013-the-nodejs-tools-for-vs" href="#nodejs-demo-install-visual-studio-2013-the-nodejs-tools-for-vs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Node.js Demo: Install Visual Studio 2013 &amp; the Node.js Tools for VS</h3>
+<h4 id="install-visual-studio-2013"><a name="user-content-install-visual-studio-2013" href="#install-visual-studio-2013" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Install Visual Studio 2013</h4>
+<ul>
+<li>If you have MSDN <a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/">download from MSDN here</a></li>
+<li>If you do not have MSDN <a href="http://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx">download the free Community Edition</a></li>
+<li>Install <a href="https://nodejstools.codeplex.com/">Node.JS Tools for Visual Studio</a></li>
+</ul>
+<h4 id="install-nodejs-for-windows"><a name="user-content-install-nodejs-for-windows" href="#install-nodejs-for-windows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Install Node.js for Windows</h4>
+<ul>
+<li>Navigate to <a href="http://nodejs.org/">http://nodejs.org/</a></li>
+<li>Click <code>Install</code></li>
+<li>Download &amp; run the msi installer (accept all defaults)</li>
+</ul>
+<h2 id="guides"><a name="user-content-guides" href="#guides" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guides</h2>
+<h3 id="create-deploy-net-app"><a name="user-content-create-deploy-net-app" href="#create-deploy-net-app" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create &amp; Deploy .NET app</h3>
+<p>In this demo you will create a new ASP.NET application and deploy it to a new Azure Website using webdepoy all from within Visual Studio (2013 or 2015).</p>
+<p><img alt="Create &amp; Deploy .NET app" src="assets/visual-studio-deploy-new-dotnet-site.gif" /></p>
+<ol>
+<li>Open Visual Studio</li>
+<li>Click <code>File</code> &gt; <code>New</code> &gt; <code>Web Site</code></li>
+<li>Select <code>ASP.NET Web Site (Razor v3)</code> &amp; Click <code>OK</code></li>
+<li>Compile &amp; Run the site (<code>Ctrl</code> + <code>F5</code>)<ul>
+<li><em>Speaker</em>: &ldquo;So we&rsquo;ve just created a basic ASP.NET site running locally on our machines. We will now deploy it to Azure without ever having to leave Visual Studio&rdquo;</li>
+</ul>
+</li>
+<li>Close the browser</li>
+<li>Right click on the website project and click <code>Publish Website</code></li>
+<li>Click <code>Microsoft Azure Websites</code></li>
+<li><em>Speaker</em>: &ldquo;You will have to log into your Azure subscription, from there you can either select to deploy to an existing website if you have already created one, or create a new one. For this demo we will start fresh with a new website.&rdquo;</li>
+<li>Click <code>New</code></li>
+<li>Fill out the required information<ul>
+<li>Site name: Enter a unique name</li>
+<li>Region: Select any region</li>
+<li>Database server: No database</li>
+</ul>
+</li>
+<li>Click <code>Create</code></li>
+<li><em>Speaker</em>: Visual Studio will now connect to Azure and create a new site for your application. Once that is done it will download the publishing settings for Web Deploy.</li>
+<li>Click <code>Publish</code> on the <code>Connection</code> screen after the site is created.</li>
+<li>Expand the Console output window to show Visual Studio is hard at work </li>
+<li><em>Speaker</em>: &ldquo;Visual Studio will now use web deploy to publish your Node.js application. Web Deploy is a technology Microsoft uses to mange deploying packages to IIS (our weberver).&rdquo;</li>
+<li>The site will automatically launch when complete.</li>
+</ol>
+<h3 id="create-deploy-nodejs-app"><a name="user-content-create-deploy-nodejs-app" href="#create-deploy-nodejs-app" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create &amp; Deploy Node.js app</h3>
+<p>In this demo you will briefly show that Visual Studio not only supports Node.js thanks to the the <a href="https://nodejstools.codeplex.com/">Node.JS Tools for Visual Studio</a> but that you can deploy &amp; monitor a Node.js app to Azure from within Visual Studio.</p>
+<p><img alt="Create &amp; Deploy Node.js app" src="assets/visual-studio-deploy-new-node-site.gif" /></p>
+<ol>
+<li>Open Visual Studio 2013<ul>
+<li><strong>Tip</strong>: This works well in the free community edition, which is worth mentioning</li>
+</ul>
+</li>
+<li>Click <code>File</code> &gt; <code>New</code> &gt; <code>Web Site</code></li>
+<li>Under <code>Templates</code> click <code>JavaScript</code> then select <code>Starter Azure Node.js Express 3 Application</code></li>
+<li>Click <code>Yes</code> to install package dependencies<ul>
+<li><strong>Tip</strong>: If this is your first time running through this demo it could take a minute or so to download the dependencies. If it&rsquo;s not working or takes too long simply right click on <code>npm</code> in your project&rsquo;s solution explorer &amp; click <code>Install Missing npm packages</code></li>
+</ul>
+</li>
+<li>Press <code>Ctrl</code> + &lsquo;F5&rsquo; to build and run the app locally</li>
+<li>Right click on the website project and click <code>Publish Website</code></li>
+<li>Click <code>Microsoft Azure Websites</code></li>
+<li><em>Speaker</em>: &ldquo;You will have to log into your Azure subscription, from there you can either select to deploy to an existing website if you have already created one, or create a new one. For this demo we will start fresh with a new website.&rdquo;</li>
+<li>Click <code>New</code></li>
+<li>Fill out the required information<ul>
+<li>Site name: Enter a unique name</li>
+<li>Region: Select any region</li>
+<li>Database server: No database<ul>
+<li><strong>Optional</strong> You can extend this demo by selecting to create a database server and showing that the creation of accounts and logging in works all without ever having to set up a database or connection string yourself in the deployed site.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <code>Create</code></li>
+<li><em>Speaker</em>: Visual Studio will now connect to Azure and create a new site for your application. Once that is done it will download the publishing settings for Web Deploy.</li>
+<li>Click <code>Publish</code> on the <code>Connection</code> screen after the site is created.</li>
+<li>Expand the Console output window to show Visual Studio is hard at work </li>
+<li><em>Speaker</em>: &ldquo;Visual Studio will now use web deploy to publish your application. Web Deploy is a technology Microsoft uses to mange deploying packages to IIS (our weberver).&rdquo;</li>
+<li>The site will automatically launch when complete.</li>
+</ol>
+<h3 id="visual-studio-server-explorer"><a name="user-content-visual-studio-server-explorer" href="#visual-studio-server-explorer" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Visual Studio &amp; Server Explorer</h3>
+<p>In this demo you will briefly explore the Server Explorer tool and show how you can manage &amp; monitor Azure from within Visual Studio.</p>
+<p><img alt="Visual Studio &amp; Server Explorer" src="assets/visual-studio-server-explorer.gif" /></p>
+<h4 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h4>
+<ol>
+<li>Open Visual Studio</li>
+<li>Click <code>View</code> &gt; <code>Server Explorer</code></li>
+<li>Expand <code>Azure</code></li>
+<li>Expand <code>Websites</code><ul>
+<li><strong>Note</strong>: You should have some sites running to showcase some of the features of the server explorer for Azure</li>
+</ul>
+</li>
+<li>Right click on any website</li>
+<li>Click <code>View Settings</code><ul>
+<li><em>Speaker:</em> &ldquo;The Azure Server explorer allows you to administrate and monitor your various Azure services including Mobile Services, Notification Hubs, SQL Databases and of course Websites. In this case we are viewing the configuration for our website. We can change the logging settings, enable remote debugging, manage connection strings and more.</li>
+</ul>
+</li>
+<li>Click <code>Logs</code><ul>
+<li><em>Speaker:</em> &ldquo;In the logs section we can stream live logs right to the Output window of Visual Studio or download them. If application logging was enabled we would be able to view even more diagnostics information.</li>
+</ul>
+</li>
+<li>Right click on the website again</li>
+<li>Highlight the &ldquo;Attach debugger&rdquo; and &ldquo;Attach debugger (Node.js) options&rdquo;<ul>
+<li><em>Speaker:</em> &ldquo;Here we can attach the .NET or Node.js debugger directly to our website running on Azure allowing for &ldquo;live site&rdquo; debugging of production issues.&rdquo;</li>
+</ul>
+</li>
+<li>Expand the <code>Files</code> folder to show your applications files<ul>
+<li><em>Speaker:</em> &ldquo;You can even view and edit the files even if you don&rsquo;t have them on your local system. We don&rsquo;t really recommend this but it&rsquo;s handy if you have to make a quick live-site change.&rdquo;</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><em>Speaker:</em> &ldquo;Those are just some of the things you can do with Azure &amp; Visual Studio. For those of you more command line oriented most of this is also available via our command line interface which you can install by running <code>npm install azure-cli</code>.&rdquo;</li>
+</ul>
+</li>
+</ol></article></body></html>

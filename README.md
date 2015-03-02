@@ -1,4 +1,4 @@
-# Azure Demo Scripts
+# Microsoft Azure Demo Scripts
 
 This repo contains a series of guides & scripts for demoing Microsoft Azure. 
 
@@ -6,56 +6,12 @@ This repo contains a series of guides & scripts for demoing Microsoft Azure.
 
 Clone this repo and open README.html to navigate the demos
 
+		git clone https://github.com/m-gagne/Microsoft-Azure-Demos.git .
+
 ## Table of contents
 
 [TOC]
 
 ## Azure Websites
 
-### Topics covered are
-
-* Current & Preview Portal Overview
-* Creating a Wordpress site via the Gallery
-* Uploading a website via FTP
-* Git deploying a Node.js Express website to Azure Websites
-* Visual Studio & Azure Websites
-* Staging / Deployment Slots
-* Backups
-
-### Demos
-
-#### Portal Overview
-
-##### Current Portal Overview
-
-[Markdown](Azure Websites Creation\portal-overview.md) - [HTML](Azure Websites Creation\portal-overview.html)
-
-#####New Portal Preview
-
-TBD
-
-#### Creating a Wordpress Website
-
-[Markdown](Azure Websites Creation\wordpress-demo.md) - [HTML](Azure Websites Creation\wordpress-demo.html)
-
-#### Uploading a website via FTP
-
-[Markdown](Azure Websites Creation\ftp-demo.md) - [HTML](Azure Websites Creation\ftp-demo.html)
-
-#### Node.js, Git & Azure Websites
-
-[Markdown](Node.js, Git & Azure Websites\demo.md) - [HTML](Node.js, Git & Azure Websites\demo.html)
-
-#### Visual Studio & Azure Websites
-
-[Markdown](Azure Websites Creation\visual-studio-websites-demo.md) - [HTML](Azure Websites Creation\visual-studio-websites-demo.html)
-
-#### Scaling Azure Websites
-
-[Markdown](Azure Websites Creation\scaling-websites-demo.md) - [HTML](Azure Websites Creation\scaling-websites-demo.html)
-
-#### Staging / Deployment Slots
-[Markdown](Azure Websites Deployment Slots\azure-websites-staging-demo.md) - [HTML](Azure Websites Deployment Slots\azure-websites-staging-demo.html)
-
-#### Automatic Backups
-[Markdown](Azure Websites Backups\azure-websites-backups-demo.md) - [HTML](Azure Websites Backups\azure-websites-backups-demo.html)
+[HTML](Azure Websites\README.html) - [Markdown](Azure Websites\README.md)

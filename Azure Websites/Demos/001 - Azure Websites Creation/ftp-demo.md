@@ -1,8 +1,8 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Creating a Website with FTP
 
-![Creating a Website with FTP](./assets/websites-ftp-deployment.gif)
+![Creating a Website with FTP](assets/websites-ftp-deployment.gif)
 
 ## Prepping your machine
 

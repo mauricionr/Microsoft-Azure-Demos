@@ -1014,66 +1014,47 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>azure-websites-staging-demo</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
-<h1 id="azure-websites-staging"><a name="user-content-azure-websites-staging" href="#azure-websites-staging" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites Staging</h1>
-<div class="toc">
-<ul>
-<li><a href="#azure-websites-staging">Azure Websites Staging</a><ul>
-<li><a href="#guide">Guide</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<p>This demo goes over the concept of staging / deployment slots and how to swap between them.</p>
-<p><img alt="Azure Websites Staging" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Deployment%20Slots/assets/azure-websites-staging.gif" /></p>
+</style><title>ftp-demo</title></head><body><article class="markdown-body"><p><a href="../../README.html">[Home]</a></p>
+<h1 id="creating-a-website-with-ftp"><a name="user-content-creating-a-website-with-ftp" href="#creating-a-website-with-ftp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating a Website with FTP</h1>
+<p><img alt="Creating a Website with FTP" src="assets/websites-ftp-deployment.gif" /></p>
+<h2 id="prepping-your-machine"><a name="user-content-prepping-your-machine" href="#prepping-your-machine" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Prepping your machine</h2>
+<h3 id="ftp-client"><a name="user-content-ftp-client" href="#ftp-client" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>FTP Client</h3>
+<p>You can use any FTP client for this demo. If you don&rsquo;t have one try <a href="https://filezilla-project.org/download.php?show_all=1">FileZilla</a>.</p>
 <h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
-<p>There are two ways to demo this. You can go through all the steps live (creating the site, defining the deployment slots, deploying to each one, swapping between the two) OR have everything pre-configured and simply explain the concept and show how easy it is to swap between the two.</p>
 <ol>
-<li>Click <code>+ NEW</code> &gt; <code>COMPUTE</code> &gt; <code>WEBSITE</code> &gt; <code>QUICK CREATE</code></li>
-<li>Enter a unique name for your site and click <code>CREATE WEBSITE</code></li>
-<li>If you haven&rsquo;t created this site on a Basic/Standard hosting plan you will need to upgrade it<ol>
-<li>Click on <code>SCALE</code></li>
-<li>Select <code>Basic</code> or <code>Standard</code></li>
-<li>Click <code>SAVE</code> then <code>YES</code> to the popup<ul>
-<li>*<em>NOTE</em>: This can take a few minutes (6+), so it&rsquo;s a good idea to have a web hosting plan configured for standard or basic already and create your demo site in t.</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>Click on <code>Add a new deployment slot</code> if you are in the Quick Start screen or the Dashboard</li>
+<li>Click <code>+NEW</code> &gt; <code>WEBSITE</code> &gt; <code>QUICK CREATE</code></li>
 <li>Enter required information<ul>
-<li><code>NAME</code>: &ldquo;preprod&rdquo;</li>
-<li><code>CONFIGURATION SOURCE</code>: Select the name of your website</li>
+<li>Unique website name</li>
+<li>Create a new hosting plan or use an existing one (you can simply use the default selection)</li>
+<li>Select your region (you can simply use the default selection)</li>
 </ul>
 </li>
-<li>Expand (by clicking the right arrow) your website to show there is now 2 sites</li>
-<li>Click on your main website</li>
-<li>Click on <code>DASHBOARD</code> (so you can see the FTP credentials)</li>
-<li>FTP upload the site found in <code>assets\coming-soon-demo-prod</code>. <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.html">Click here</a> to learn how to FTP deploy a site in Azure.</li>
-<li>
-<p>Click <code>BROWSE</code> on the site to show what it looks like</p>
-<ul>
-<li><em>Speaker</em>: &ldquo;This is our current production site, it&rsquo;s not that great but the good news is the developers are hard at work on the next version. Note that the URL for this site is <your site name>.azurewebsites.net&rdquo;</li>
-<li><strong>Tip</strong>: Do not close this tab when you are done, you will need it later!</li>
-</ul>
-</li>
-<li>
-<p>Navigate back to your list of websites and click the <code>preprod</code> version of the site</p>
-</li>
-<li>Click on the <code>preprod</code> version of your website</li>
-<li>Click on <code>DASHBOARD</code> (so you can see the FTP credentials)</li>
-<li>FTP upload the site found in <code>assets\coming-soon-demo-preprod</code>. <a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/ftp-demo.html">Click here</a> to learn how to FTP deploy a site in Azure.<ul>
-<li><strong>Tip:</strong> Be sure to use the proper deployment username for your <code>preprod</code> site, it is different than the one for your main site. If you don not change this you will just log into your main site.</li>
-</ul>
-</li>
-<li>Click <code>BROWSE</code> on the site to show what it looks like &amp; compare it to the current one in production<ul>
-<li><em>Speaker</em>: &ldquo;This is the newest version of the site, I think it&rsquo;s much nicer. It&rsquo;s passed all tests and we are ready to swap it so it is the live site! Note the URL of this site is <your site name>-<deployment slot>.azurewebsites.net&rdquo;</li>
-<li><strong>Tip</strong>: Do not close this tab when you are done, you will need it later!</li>
-</ul>
-</li>
-<li>Click <code>SWAP</code><br />
-        * <em>Speaker</em>: &ldquo;You can have multiple deployment slots for say dev, test, pre-production, beta &amp; finally production. Select the source and the destination and simply click the checkmark&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;Azure is now configuring a blank website for you&rdquo;</li>
+<li>Click on the website you just created</li>
+<li>Click <code>Set up deployment credentials</code><ul>
+<li>Enter a unique username &amp; password</li>
 <li>Click <code>OK</code> (checkmark)</li>
-<li>Go back to your production site browser tab and refresh the page to show that the site has changed<br />
-        * <em>Speaker</em>: &ldquo;When you swap deployment slots Azure does what is called a VIP swap or Virtual IP swap, it simply changes (interally) where your slots point to so it&rsquo;s very fast. You can see the production site now has the latest code and if we refresh the preprod one it will have the old code ready to be updated to the current and future versions of your site/app.&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;Your username must be unique&rdquo;</li>
+<li><em>Speaker</em>: &ldquo;You can come back here anytime to come back and reset your deployment credentials&rdquo;</li>
+</ul>
+</li>
+<li>Click <code>DASHBOARD</code></li>
+<li>Scroll down and zoom in to show the FTPS host name &amp; user<ul>
+<li><strong>Tip</strong>: You can use the built in Windows magnifier (<code>Windows Key</code> + &lsquo;+&rsquo; / <code>Windows Key</code> + &lsquo;-&lsquo;) or the very popular and handy <a href="https://technet.microsoft.com/en-us/sysinternals/bb897434">ZoomIt</a> which also allows for drawing arrows/boxes on the screen.</li>
+</ul>
+</li>
+<li>Launch your FTP Client (this demo uses FileZilla).</li>
+<li>Enter the FTP Host Name, Username &amp; Password and connect<ul>
+<li>If promoted to accept certificates do so</li>
+</ul>
+</li>
+<li>In your FTP client navigate the remote directory to <code>/site/wwwroot</code></li>
+<li>Delete the file &lsquo;hostingstart.html&rsquo;<ul>
+<li><em>Speaker</em>: &ldquo;Explain that Azure automatically creates your sites with this placeholder file.&rdquo;</li>
+</ul>
+</li>
+<li>In your FTP client navigate to the local directory that contains the website you wish to upload. This can be any site/app (.NET/PHP/Node.js/HTML etc.). If you don&rsquo;t have one you can use the site found in <code>Azure Websites Deployment Slots\assets\coming-soon-demo-prod</code></li>
+<li>Drag &amp; Drop the local folder into the remote folder (upload the site)</li>
+<li>Once done uploading go back to the Azure Portal and click <code>Browse</code> on your site to show that it&rsquo;s been uploaded.</li>
+<li><em>Speaker</em>: &ldquo;FTP is a great way to get your site uploaded quickly however there are a number of better ways including using integrated source control for continuous deployment which we will also demo.&rdquo;</li>
 </ol></article></body></html>

@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Azure Websites Backups
 
@@ -6,7 +6,7 @@
 
 This is less a "demo" then a portal overview of how to configure backups for your website.
 
-![Azure Websites Backups](./assets/azure-websites-backups.gif)
+![Azure Websites Backups](assets/azure-websites-backups.gif)
 
 ## Guide
 
@@ -14,7 +14,7 @@ This is less a "demo" then a portal overview of how to configure backups for you
 
 This part is technically optional if you have already created a storage account. However you should still explain the concept of a storage account to the audience.
 
-1. *Speaker:* "Backup your Windows Azure Website to a Storage Account on demand, or on a schedule you define. Use this backup to create an offline copy of this website or restore it to a previous version. To get started we will need to create a storage account."
+1. *Speaker:* "Backup your Microsoft Azure Website to a Storage Account on demand, or on a schedule you define. Use this backup to create an offline copy of this website or restore it to a previous version. To get started we will need to create a storage account."
 1. *Speaker*: "Azure Storage is massively scalable, so you can store and process hundreds of terabytes of data to support the big data scenarios required by scientific, financial analysis, and media applications. Or you can store the small amounts of data required for a small business website. Wherever your needs fall, you pay only for the data you're storing. Azure Storage currently stores tens of trillions of unique customer objects, and handles millions of requests per second on average. You can select your level of redundancy, the lowest being triple redundant, so you know your data is protected!"
 1. Click `+ NEW` > `DATA SERVICES` > `STORAGE` > `QUICK CREATE`
 1. Enter required information

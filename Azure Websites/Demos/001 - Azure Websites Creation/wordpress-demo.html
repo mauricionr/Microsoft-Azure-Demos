@@ -1014,51 +1014,58 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>azure-websites-backups-demo</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
-<h1 id="azure-websites-backups"><a name="user-content-azure-websites-backups" href="#azure-websites-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites Backups</h1>
-<div class="toc">
-<ul>
-<li><a href="#azure-websites-backups">Azure Websites Backups</a><ul>
-<li><a href="#guide">Guide</a><ul>
-<li><a href="#create-a-storage-account">Create a storage account</a></li>
-<li><a href="#create-a-website-enable-backups">Create a website &amp; enable backups</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<p>This is less a &ldquo;demo&rdquo; then a portal overview of how to configure backups for your website.</p>
-<p><img alt="Azure Websites Backups" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Backups/assets/azure-websites-backups.gif" /></p>
+</style><title>wordpress-demo</title></head><body><article class="markdown-body"><p><a href="../../README.html">[Home]</a></p>
+<h1 id="wordpress-demo"><a name="user-content-wordpress-demo" href="#wordpress-demo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Wordpress Demo</h1>
+<p><img alt="Create a Wordpress Site" src="assets/websites-wordpress-create.gif" /></p>
 <h2 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h2>
-<h3 id="create-a-storage-account"><a name="user-content-create-a-storage-account" href="#create-a-storage-account" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create a storage account</h3>
-<p>This part is technically optional if you have already created a storage account. However you should still explain the concept of a storage account to the audience.</p>
 <ol>
-<li><em>Speaker:</em> &ldquo;Backup your Windows Azure Website to a Storage Account on demand, or on a schedule you define. Use this backup to create an offline copy of this website or restore it to a previous version. To get started we will need to create a storage account.&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;Azure Storage is massively scalable, so you can store and process hundreds of terabytes of data to support the big data scenarios required by scientific, financial analysis, and media applications. Or you can store the small amounts of data required for a small business website. Wherever your needs fall, you pay only for the data you&rsquo;re storing. Azure Storage currently stores tens of trillions of unique customer objects, and handles millions of requests per second on average. You can select your level of redundancy, the lowest being triple redundant, so you know your data is protected!&rdquo;</li>
-<li>Click <code>+ NEW</code> &gt; <code>DATA SERVICES</code> &gt; <code>STORAGE</code> &gt; <code>QUICK CREATE</code></li>
-<li>Enter required information<ul>
-<li><code>URL</code>: Enter a globally unique name for your account</li>
-<li><code>LOCATION/AFFINITY GROUP</code>: Select one or use the default</li>
-<li><code>REPLICATION</code>: Use default</li>
+<li>Click <code>NEW</code></li>
+<li>Click <code>WEBSITE</code></li>
+<li>Click <code>FROM GALLERY</code></li>
+<li>Scroll through the list of frameworks, blogs &amp; other gallery items<ul>
+<li><em>Speaker</em>: &ldquo;The gallery contains a number of popular web applications and frameworks and makes it easy to deploy with with just a few clicks. This includes blogs such as Orchard CMD, Umbraco &amp; of course Wordpress, but also CMSs like Drupal &amp; Acquia, ecommerce platforms, forums, image galleries and more.&rdquo;</li>
 </ul>
 </li>
-<li>Click <code>CREATE STORAGE ACCOUNT</code></li>
+<li>Click <code>BLOGS</code> then <code>Wordpress</code><ul>
+<li><em>Speaker</em>: &ldquo;The Azure team will automatically deploy and configure the latest Wordpress release&rdquo;</li>
+</ul>
+</li>
+<li>Configure Wordpress - Step 1<ul>
+<li><code>URL</code>: enter a unique name</li>
+<li><code>DATABASE</code>: If you haven&rsquo;t yet created a MySQL database select &ldquo;Create a new MySQL database&rdquo; otherwise select &ldquo;Use Existing MySQL database&rdquo;<br />
+WEBSCALEGROUP:<ul>
+<li>Chose the default option, however explain what a web scale group is.</li>
+<li><em>Speaker</em>: &ldquo;Azure allows you to groups sites together. So certain sites could all be allocated to a certain size server, where as others can be assigned to a different cluster with a different scale.&rdquo;</li>
+</ul>
+</li>
+<li>Deployment Settings:<ul>
+<li><em>Speaker</em>: &ldquo;Wordpress can be made more secure by providing 4 authentication keys and 4 hashing salts. What are these? it&rsquo;s random bits of data that when combined add an extra layer of security to your passwords and data stores in cookies. Wordpress has a random key generator you can use found at aka.ms/wordpresskeys or by searching for &lsquo;wordpress key generator&rsquo;&ldquo;</li>
+<li>Show them the key generator at <a href="http://aka.ms/wordpresskeys">http://aka.ms/wordpresskeys</a> but don&rsquo;t bother entering them into the Azure wizard</li>
+</ul>
+</li>
+<li>Click <code>Next</code> (Right arrow)</li>
+</ul>
+</li>
+<li>Configure Wordpress - Step 2<ul>
+<li>Depending of your selection for creating a new MySQL database or reusing an existing one this screen will be slightly different. Either way there is nothing for you to do other than to accept the ClearDB&rsquo;s legal terms at the bottom.</li>
+<li><em>Speaker</em>: &ldquo;Azure will automatically create your website to host Wordpress as well as create &amp; manage a MySQL database which is required by Wordpress. This &ldquo;MySQL as a Service&rdquo; is hosted on Azure but managed by ClearDB as they are better equipped at managing MySQL then Microsoft, which is why you have to agree to their terms and conditions. You can if you wish create a MySQL server using Virtual Machines and connect that to your website but that scenario won&rsquo;t be covered by this demo.&rdquo;&ldquo;</li>
+<li>Click <code>OK</code> (Checkmark)</li>
+</ul>
+</li>
+<li><em>Speaker</em>: &ldquo;Azure is now either creating your web server or connecting to one it has already created for you, setting up IIS with PHP, installing the latest version of Wordpress, creating a database for you, setting it up. In short it&rsquo;s auto-magically setting up everything for you so you don&rsquo;t have to worry about servers, databases, connection strings, configuring PHP etc. This will take about 30 seconds to a minute.&rdquo;</li>
+<li>Once the site has been created click on it and then click <code>Browse</code> to show that it&rsquo;s now ready to be configured with their language &amp; administrative account etc.</li>
 </ol>
-<h3 id="create-a-website-enable-backups"><a name="user-content-create-a-website-enable-backups" href="#create-a-website-enable-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create a website &amp; enable backups</h3>
+<p><strong> Optional </strong><br />
+If you have time you can also show deleting a Wordpress site and explain the concept of linked resources.</p>
+<p><img alt="Deleting a websites &amp; managing linked resources" src="assets/websites-wordpress-linked-resources.gif" /></p>
 <ol>
-<li>Click <code>+ NEW</code> &gt; <code>COMPUTE</code> &gt; <code>WEBSITE</code> &gt; <code>Quick Create</code></li>
-<li><em>Speaker</em>: &ldquo;We will create a new test site in our hosting plan that is setup for Standard tier. Only the Standard tier supports automatic backups&rdquo;</li>
-<li>Enter required information<ul>
-<li><code>URL</code>: a unique name for this demo site</li>
-<li><code>WEB HOSTING PLAN</code>: You will need to deploy to a <strong>Standard</strong> tier plan as only the standard tier supports automatic backups.</li>
+<li>In the Dashboard for your new Wordpress site in Azure click <code>DELETE</code></li>
+<li>In the &ldquo;MySQL&rdquo; Database Warning&rdquo; popup. [x] select the associated database<ul>
+<li><em>Speaker</em>: &ldquo;When Azure creates and manages services like this for you it automatically links resources so you can manage them together. In this case it&rsquo;s prompting you to delete the linked database.&rdquo;</li>
 </ul>
 </li>
-<li>Click on the <code>BACKUPS</code> tab</li>
-<li>Click <code>ON</code> to enable backups</li>
-<li>Select your newly created storage account (or any previously created storage account)</li>
-<li><em>Speaker</em>: &ldquo;Currently storage account only support daily backups.&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;If your website is linked to a database via the configurations connection string you can optionally enable database backups as well. If you are using Azure SQL Azure SQL Database it by default (and for free) includes full database backup once a week, differential database backups once a day, and transaction log backups every 5 minutes.&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;You can perform a backup any time you want simply by clicking on BACKUP NOW.&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;To restore a backup click RESTORE NOW and select the backup to restore from.&rdquo;</li>
+<li>Close the prompt (Do NOT delete the site)</li>
+<li>Click the <code>LINKED RESOURCES</code> tab to show the currently configured linked resources</li>
+<li>Click <code>LINK</code> </li>
+<li><em>Speaker</em>: &ldquo;Here you can either add new or link to existing resources such as SQL Databases &amp; Storage Accounts. This is helpful to keep resources together for management purposes. Imagine having 10&rsquo;s or even 100&rsquo;s of websites and not knowing which database or storage account belongs to which.&rdquo;</li>
 </ol></article></body></html>

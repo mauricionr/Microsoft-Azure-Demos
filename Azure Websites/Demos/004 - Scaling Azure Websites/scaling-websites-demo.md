@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Scaling Azure Websites
 
@@ -6,7 +6,7 @@
 
 This is less a "demo" then a portal overview of how to configure the three scaling scenarios which are "Manual", "Scheduled" or "Auto".
 
-![Scaling Azure Websites](./assets/websites-scale.gif)
+![Scaling Azure Websites](assets/websites-scale.gif)
 
 ## Guide
 

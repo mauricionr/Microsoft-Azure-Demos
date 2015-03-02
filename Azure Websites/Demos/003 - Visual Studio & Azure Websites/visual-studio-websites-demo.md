@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Visual Studio & Azure Websites
 
@@ -31,7 +31,7 @@
 
 In this demo you will create a new ASP.NET application and deploy it to a new Azure Website using webdepoy all from within Visual Studio (2013 or 2015).
 
-![Create & Deploy .NET app](./assets/visual-studio-deploy-new-dotnet-site.gif)
+![Create & Deploy .NET app](assets/visual-studio-deploy-new-dotnet-site.gif)
 
 1. Open Visual Studio
 1. Click `File` > `New` > `Web Site`
@@ -58,7 +58,7 @@ In this demo you will create a new ASP.NET application and deploy it to a new Az
 
 In this demo you will briefly show that Visual Studio not only supports Node.js thanks to the the [Node.JS Tools for Visual Studio](https://nodejstools.codeplex.com/) but that you can deploy & monitor a Node.js app to Azure from within Visual Studio.
 
-![Create & Deploy Node.js app](./assets/visual-studio-deploy-new-node-site.gif)
+![Create & Deploy Node.js app](assets/visual-studio-deploy-new-node-site.gif)
 
 1. Open Visual Studio 2013
 	* **Tip**: This works well in the free community edition, which is worth mentioning

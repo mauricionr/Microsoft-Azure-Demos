@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Node.js, Git & Azure Websites
 
@@ -134,7 +134,7 @@ Git doesn't have a central server like subversion, TFS or Visual Studio Online. 
 Back in your open browser is some instructions on how to add the Azure remote origin Git repository.
 
 - Go back to your browser that is open to the `DEPLOYMENTS` tab in the portal.
-- Scroll down to Step 3: "Add remote Windows Azure repository and push your stuff"
+- Scroll down to Step 3: "Add remote Microsoft Azure repository and push your stuff"
 - Copy and run the two commands
 - It will prompt you for your Azure deployment credentials , enter your password and hit `<enter>`
 	- Not clear on Deployment Credentials? [Documentation is here](http://azure.microsoft.com/en-us/documentation/articles/web-sites-manage/#ftp-credentials)

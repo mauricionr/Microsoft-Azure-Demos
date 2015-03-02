@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Azure Websites Staging
 
@@ -6,7 +6,7 @@
 
 This demo goes over the concept of staging / deployment slots and how to swap between them.
 
-![Azure Websites Staging](./assets/azure-websites-staging.gif)
+![Azure Websites Staging](assets/azure-websites-staging.gif)
 
 ## Guide
 

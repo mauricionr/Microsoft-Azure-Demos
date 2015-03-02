@@ -1014,50 +1014,68 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>portal-overview</title></head><body><article class="markdown-body"><p><a href="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/README.html">[Home]</a></p>
-<h1 id="current-preview-portal-overview"><a name="user-content-current-preview-portal-overview" href="#current-preview-portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Current &amp; Preview Portal Overview</h1>
-<h2 id="notes"><a name="user-content-notes" href="#notes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Notes</h2>
+</style><title>README</title></head><body><article class="markdown-body"><p><a href="../README.html">[Home]</a></p>
+<h1 id="microsoft-azure-website-presentation-demo-scripts"><a name="user-content-microsoft-azure-website-presentation-demo-scripts" href="#microsoft-azure-website-presentation-demo-scripts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Microsoft Azure Website Presentation &amp; Demo Scripts</h1>
+<p>This repo contains a series of guides &amp; scripts for demoing Microsoft Azure. </p>
+<h2 id="usage"><a name="user-content-usage" href="#usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Usage</h2>
+<p>Clone this repo and open README.html to navigate the demos</p>
+<h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of contents</h2>
+<div class="toc">
 <ul>
-<li>Explain that there are two version of the portal<ul>
-<li>The current on which is available here: <a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a></li>
-<li>The preview portal aka &ldquo;New Portal&rdquo; which is available here: <a href="https://portal.azure.com/">https://portal.azure.com/</a></li>
+<li><a href="#microsoft-azure-website-presentation-demo-scripts">Microsoft Azure Website Presentation &amp; Demo Scripts</a><ul>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#azure-websites">Azure Websites</a><ul>
+<li><a href="#topics-covered-are">Topics covered are</a></li>
+<li><a href="#demos">Demos</a><ul>
+<li><a href="#portal-overview">Portal Overview</a><ul>
+<li><a href="#current-portal-overview">Current Portal Overview</a></li>
+<li><a href="#new-portal-preview">New Portal Preview</a></li>
 </ul>
 </li>
-<li>All demos (unless using preview features) will be based on the current portal</li>
-</ul>
-<h2 id="interface-overview"><a name="user-content-interface-overview" href="#interface-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Interface Overview</h2>
-<p><img alt="Portal Overview" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/portal-overview.png" /></p>
-<ol>
-<li>List of services available on Azure<ul>
-<li><strong>Speaker tips</strong>: Mention a few of them and explain that Azure includes 50+ services such as<ul>
-<li>Virtual Machines (Windows &amp; Linux)</li>
-<li>Websites</li>
-<li>Mobile Services (iOS, Android, Windows, Web, etc.)</li>
-<li>SQL, DocumentDB, Cache, Search etc.</li>
-<li>HDInsight</li>
-<li>Machine Learning</li>
-<li>Stream Analytics</li>
-<li>Virtual Networks</li>
-<li>Azure Active Directory</li>
-<li>Media Services</li>
-<li>CDN</li>
+<li><a href="#creating-a-wordpress-website">Creating a Wordpress Website</a></li>
+<li><a href="#uploading-a-website-via-ftp">Uploading a website via FTP</a></li>
+<li><a href="#nodejs-git-azure-websites">Node.js, Git &amp; Azure Websites</a></li>
+<li><a href="#visual-studio-azure-websites">Visual Studio &amp; Azure Websites</a></li>
+<li><a href="#scaling-azure-websites">Scaling Azure Websites</a></li>
+<li><a href="#staging-deployment-slots">Staging / Deployment Slots</a></li>
+<li><a href="#automatic-backups">Automatic Backups</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Quickest and easiest way to create new services/infrastructure on Azure</li>
-<li>List of your configured services on Azure</li>
-</ol>
-<h2 id="adding-new-services"><a name="user-content-adding-new-services" href="#adding-new-services" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Adding New Services</h2>
-<p><img alt="Adding New Services" src="///C://Users/marcgagn/OneDrive%20-%20Microsoft/Azure/Presentations/Microsoft%20Azure%20Demos/Azure%20Websites%20Creation/assets/portal-overview-add-new-vm.gif" /></p>
-<p>Since we will be working with Websites in the rest of the demo, It&rsquo;s a good idea to show how easy it is to add other things like a Virtual Machine right from the portal, which in turn gives a brief overview of the mechanics of the portal. Don&rsquo;t worry about completely adding a new Virtual Machine however do follow the wizard to create one and explain that once finished their server will be available in 5-6 minutes.</p>
-<h3 id="guide"><a name="user-content-guide" href="#guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guide</h3>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="azure-websites"><a name="user-content-azure-websites" href="#azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Azure Websites</h2>
+<h3 id="topics-covered-are"><a name="user-content-topics-covered-are" href="#topics-covered-are" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Topics covered are</h3>
 <ul>
-<li><em>Speaker</em>: &ldquo;Adding new services/infrastructure is easy&rdquo;</li>
-<li>Click on <code>+ NEW</code></li>
-<li>Click on <code>Virtual Machines</code></li>
-<li><em>Speaker</em>: &ldquo;you can quickly create a new server or select one from the gallery&rdquo;</li>
-<li>Click <code>From Gallery</code></li>
-<li><em>Speaker</em>: &ldquo;There are many images to chose from including Windows Server, popular Linux distros (distributions) like Ubuntu, CentOS &amp; Suse even Puppet servers&rdquo;</li>
-<li><em>Speaker</em>: &ldquo;We are not going to be creating virtual machines in this demo, but this gives you an idea of some of the other things you can do with Azure&rdquo;</li>
-</ul></article></body></html>
+<li>Current &amp; Preview Portal Overview</li>
+<li>Creating a Wordpress site via the Gallery</li>
+<li>Uploading a website via FTP</li>
+<li>Git deploying a Node.js Express website to Azure Websites</li>
+<li>Visual Studio &amp; Azure Websites</li>
+<li>Staging / Deployment Slots</li>
+<li>Backups</li>
+</ul>
+<h3 id="demos"><a name="user-content-demos" href="#demos" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Demos</h3>
+<h4 id="portal-overview"><a name="user-content-portal-overview" href="#portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Portal Overview</h4>
+<h5 id="current-portal-overview"><a name="user-content-current-portal-overview" href="#current-portal-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Current Portal Overview</h5>
+<p><a href="Demos/001%20-%20Azure%20Websites%20Creation/portal-overview.html">HTML</a> - <a href="Demos/001%20-%20Azure%20Websites%20Creation/portal-overview.md">Markdown</a></p>
+<h5 id="new-portal-preview"><a name="user-content-new-portal-preview" href="#new-portal-preview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>New Portal Preview</h5>
+<p>TBD</p>
+<h4 id="creating-a-wordpress-website"><a name="user-content-creating-a-wordpress-website" href="#creating-a-wordpress-website" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating a Wordpress Website</h4>
+<p><a href="Demos/001%20-%20Azure%20Websites%20Creation/wordpress-demo.html">HTML</a> - <a href="Demos/001%20-%20Azure%20Websites%20Creation/wordpress-demo.md">Markdown</a></p>
+<h4 id="uploading-a-website-via-ftp"><a name="user-content-uploading-a-website-via-ftp" href="#uploading-a-website-via-ftp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Uploading a website via FTP</h4>
+<p><a href="Demos/001%20-%20Azure%20Websites%20Creation/ftp-demo.html">HTML</a> - <a href="Demos/001%20-%20Azure%20Websites%20Creation/ftp-demo.md">Markdown</a></p>
+<h4 id="nodejs-git-azure-websites"><a name="user-content-nodejs-git-azure-websites" href="#nodejs-git-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Node.js, Git &amp; Azure Websites</h4>
+<p><a href="Demos\002 - Node.js, Git &amp; Azure Websites\node-git-azure-websites.html">HTML</a> - <a href="Demos\002 - Node.js, Git &amp; Azure Websites\node-git-azure-websites.md">Markdown</a></p>
+<h4 id="visual-studio-azure-websites"><a name="user-content-visual-studio-azure-websites" href="#visual-studio-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Visual Studio &amp; Azure Websites</h4>
+<p><a href="Demos\003 - Visual Studio &amp; Azure Websites\visual-studio-websites-demo.html">HTML</a> - <a href="Demos\003 - Visual Studio &amp; Azure Websites\visual-studio-websites-demo.md">Markdown</a></p>
+<h4 id="scaling-azure-websites"><a name="user-content-scaling-azure-websites" href="#scaling-azure-websites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scaling Azure Websites</h4>
+<p><a href="Demos/004%20-%20Scaling%20Azure%20Websites/scaling-websites-demo.html">Markdown</a> - <a href="Demos/004%20-%20Scaling%20Azure%20Websites/scaling-websites-demo.md">Markdown</a></p>
+<h4 id="staging-deployment-slots"><a name="user-content-staging-deployment-slots" href="#staging-deployment-slots" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Staging / Deployment Slots</h4>
+<p><a href="Demos/005%20-%20Azure%20Websites%20Deployment%20Slots/azure-websites-staging-demo.html">HTML</a> - <a href="Demos/005%20-%20Azure%20Websites%20Deployment%20Slots/azure-websites-staging-demo.md">Markdown</a></p>
+<h4 id="automatic-backups"><a name="user-content-automatic-backups" href="#automatic-backups" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Automatic Backups</h4>
+<p><a href="Demos/006%20-%20Azure%20Websites%20Backups/azure-websites-backups-demo.html">HTML</a> - <a href="Demos/006%20-%20Azure%20Websites%20Backups/azure-websites-backups-demo.md">Markdown</a></p></article></body></html>

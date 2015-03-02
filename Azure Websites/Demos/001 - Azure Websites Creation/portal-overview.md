@@ -1,4 +1,4 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 #Current & Preview Portal Overview
 
@@ -11,7 +11,7 @@
 
 ## Interface Overview
 
-![Portal Overview](./assets/portal-overview.png)
+![Portal Overview](assets/portal-overview.png)
 
 1. List of services available on Azure
 	* **Speaker tips**: Mention a few of them and explain that Azure includes 50+ services such as

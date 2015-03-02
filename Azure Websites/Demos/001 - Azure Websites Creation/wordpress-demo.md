@@ -1,8 +1,8 @@
-[[Home]](../README.html)
+[[Home]](../../README.html)
 
 # Wordpress Demo
 
-![Create a Wordpress Site](./assets/websites-wordpress-create.gif)
+![Create a Wordpress Site](assets/websites-wordpress-create.gif)
 
 ## Guide
 
