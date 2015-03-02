@@ -14,4 +14,4 @@ Clone this repo and open README.html to navigate the demos
 
 ## Azure Websites
 
-[HTML](Azure Websites\README.html) - [Markdown](Azure Websites\README.md)
+[HTML](Azure Websites/README.html) - [Markdown](Azure Websites/README.md)

@@ -33,7 +33,7 @@ You can use any FTP client for this demo. If you don't have one try [FileZilla](
 1. In your FTP client navigate the remote directory to `/site/wwwroot`
 1. Delete the file 'hostingstart.html'
 	* *Speaker*: "Explain that Azure automatically creates your sites with this placeholder file."
-1. In your FTP client navigate to the local directory that contains the website you wish to upload. This can be any site/app (.NET/PHP/Node.js/HTML etc.). If you don't have one you can use the site found in `Azure Websites Deployment Slots\assets\coming-soon-demo-prod`
+1. In your FTP client navigate to the local directory that contains the website you wish to upload. This can be any site/app (.NET/PHP/Node.js/HTML etc.). If you don't have one you can use the site found in `Azure Websites Deployment Slots/assets/coming-soon-demo-prod`
 1. Drag & Drop the local folder into the remote folder (upload the site)
 1. Once done uploading go back to the Azure Portal and click `Browse` on your site to show that it's been uploaded.
 1. *Speaker*: "FTP is a great way to get your site uploaded quickly however there are a number of better ways including using integrated source control for continuous deployment which we will also demo."

@@ -43,4 +43,4 @@ There are two ways to demo this. You can go through all the steps live (creating
 		* *Speaker*: "You can have multiple deployment slots for say dev, test, pre-production, beta & finally production. Select the source and the destination and simply click the checkmark"
 1. Click `OK` (checkmark)
 1. Go back to your production site browser tab and refresh the page to show that the site has changed
-		* *Speaker*: "When you swap deployment slots Azure does what is called a VIP swap or Virtual IP swap, it simply changes (interally) where your slots point to so it's very fast. You can see the production site now has the latest code and if we refresh the preprod one it will have the old code ready to be updated to the current and future versions of your site/app."
+		* *Speaker*: "When you swap deployment slots Azure does what is called a VIP swap or Virtual IP swap, it simply changes (internally) where your slots point to so it's very fast. You can see the production site now has the latest code and if we refresh the preprod one it will have the old code ready to be updated to the current and future versions of your site/app."
